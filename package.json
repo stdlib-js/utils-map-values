@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-map-values",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Map values from one object to a new object having the same keys.",
   "license": "Apache-2.0",
   "author": {
