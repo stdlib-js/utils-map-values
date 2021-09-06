@@ -138,6 +138,14 @@ console.dir( obj2 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]: map keys from one object to a new object having the same values.
+-   [`@stdlib/utils/omit-by`][@stdlib/utils/omit-by]: return a partial object copy excluding properties for which a predicate (function) returns a truthy value.
+-   [`@stdlib/utils/pick-by`][@stdlib/utils/pick-by]: return a partial object copy containing properties for which a predicate (function) returns a truthy value.
+
 </section>
 
 <!-- /.related -->
@@ -200,6 +208,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-map-values/main/LICENSE
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys
+
+[@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils-omit-by
+
+[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils-pick-by
+
+<!-- </related-links> -->
 
 </section>
 
