@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.mapValues;
+})();
 })();
 </script>
 ```
@@ -125,6 +127,7 @@ The `transform` function is provided three arguments:
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function transform( value, key ) {
     return key + ':' + value;
@@ -142,6 +145,7 @@ var obj2 = mapValues( obj1, transform );
 console.dir( obj2 );
 // => { 'a': 'a:beep', 'b': 'b:boop', 'c': 'c:foo', 'd': 'd:bar' }
 
+})();
 })();
 </script>
 </body>
@@ -249,11 +253,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/umd
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/umd/tree/umd
 
-[@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils-omit-by/tree/umd
+[@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils-omit-by/tree/umd/tree/umd
 
-[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils-pick-by/tree/umd
+[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils-pick-by/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
