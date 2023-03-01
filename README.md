@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-map-values
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
+var mapValues = require( '@stdlib/utils-map-values' );
 ```
 
 #### mapValues( obj, transform )
@@ -94,13 +110,8 @@ The `transform` function is provided three arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
+```javascript
+var mapValues = require( '@stdlib/utils-map-values' );
 
 function transform( value, key ) {
     return key + ':' + value;
@@ -117,10 +128,6 @@ var obj2 = mapValues( obj1, transform );
 
 console.dir( obj2 );
 // => { 'a': 'a:beep', 'b': 'b:boop', 'c': 'c:foo', 'd': 'd:bar' }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -143,9 +150,9 @@ console.dir( obj2 );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
--   <span class="package-name">[`@stdlib/utils/omit-by`][@stdlib/utils/omit-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding properties for which a predicate (function) returns a truthy value.</span>
--   <span class="package-name">[`@stdlib/utils/pick-by`][@stdlib/utils/pick-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy containing properties for which a predicate (function) returns a truthy value.</span>
+-   <span class="package-name">[`@stdlib/utils-map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
+-   <span class="package-name">[`@stdlib/utils-omit-by`][@stdlib/utils/omit-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding properties for which a predicate (function) returns a truthy value.</span>
+-   <span class="package-name">[`@stdlib/utils-pick-by`][@stdlib/utils/pick-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy containing properties for which a predicate (function) returns a truthy value.</span>
 
 </section>
 
@@ -160,7 +167,7 @@ console.dir( obj2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -224,11 +231,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/esm
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys
 
-[@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils-omit-by/tree/esm
+[@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils-omit-by
 
-[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils-pick-by/tree/esm
+[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils-pick-by
 
 <!-- </related-links> -->
 
