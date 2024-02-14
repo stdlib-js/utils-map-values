@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-map-values/tags). For example,
+
+```javascript
 import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.0-deno/mod.js';
 ```
 
@@ -106,7 +111,7 @@ The `transform` function is provided three arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.0-deno/mod.js';
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@deno/mod.js';
 
 function transform( value, key ) {
     return key + ':' + value;
