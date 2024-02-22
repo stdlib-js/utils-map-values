@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.1-esm/index.mjs';
 ```
 
 #### mapValues( obj, transform )
@@ -111,7 +111,7 @@ The `transform` function is provided three arguments:
 <body>
 <script type="module">
 
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.1-esm/index.mjs';
 
 function transform( value, key ) {
     return key + ':' + value;
