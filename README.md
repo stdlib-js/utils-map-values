@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-map-values/tags). For example,
+
+```javascript
 import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.2-esm/index.mjs';
 ```
 
@@ -111,7 +116,7 @@ The `transform` function is provided three arguments:
 <body>
 <script type="module">
 
-import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@v0.2.2-esm/index.mjs';
+import mapValues from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map-values@esm/index.mjs';
 
 function transform( value, key ) {
     return key + ':' + value;
